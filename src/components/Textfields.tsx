@@ -1,6 +1,6 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import React, { Dispatch, FC, SetStateAction } from 'react'
 
-import { TextField, TextFieldProps } from '@mui/material'
+import { Autocomplete, TextField, TextFieldProps } from '@mui/material'
 
 type StandardTextFieldBaseProps = Pick<
   TextFieldProps,
@@ -31,4 +31,27 @@ export const StandardTextField = ({
 
 StandardTextField.defaultProps = {
   fullWidth: true,
+}
+
+interface IAutocompleteTextField {
+  id: string
+  label: string
+  onChange: (value: string | null) => void
+  options: string[]
+  value: string | null
+}
+
+export const AutocompleteTextField: FC<IAutocompleteTextField> = (props) => {
+  return (
+    <Autocomplete
+      filterSelectedOptions
+      id={props.id}
+      options={props.options}
+      renderInput={(params) => <TextField {...params} label={props.label} />}
+      value={props.value}
+      onChange={(event, newValue: string | null) => {
+        props.onChange(newValue)
+      }}
+    />
+  )
 }
