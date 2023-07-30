@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress'
 
-import { Button } from './button.component'
+import { Button } from './Buttons'
 
 export interface HeaderWithActionProps {
   loading: boolean

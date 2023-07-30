@@ -3,7 +3,7 @@ import React from 'react'
 import { TextField } from '@mui/material'
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { DialogBox } from '../components/dialogbox.component'
+import { DialogBox } from '../components/DialogBoxes'
 
 const DialogBoxes: Meta<typeof DialogBox> = {
   title: 'Components/DialogBox',

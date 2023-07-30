@@ -2,8 +2,8 @@ import React, { FC, ReactNode } from 'react'
 
 import { Box } from '@mui/material'
 
-import Footer from '../components/Footer.component'
-import { Navbar } from '../components/Navbar.component'
+import Footer from '../components/Footer'
+import { Navbar } from '../components/Navbar'
 import { SnackBarProvider } from '../contexts/SnackBarContext'
 
 interface LayoutProps {

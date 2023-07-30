@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { HeaderWithAction } from '../components/HeaderWithAction.component'
+import { HeaderWithAction } from '../components/HeaderWithAction'
 
 const Headers: Meta<typeof HeaderWithAction> = {
   title: 'Components/Headers',

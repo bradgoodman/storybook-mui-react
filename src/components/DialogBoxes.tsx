@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import {
@@ -10,12 +10,12 @@ import {
   IconButton,
 } from '@mui/material'
 
-import { Button, CancelButton } from './button.component'
+import { Button, CancelButton } from './Buttons'
 
 type DialogBaseProps = Pick<MuiDialogProps, 'open' | 'onClose'>
 
 export interface DialogBoxProps extends DialogBaseProps {
-  children: JSX.Element
+  children: ReactElement
   onClose: (open: boolean) => void
   open: boolean
   title: string

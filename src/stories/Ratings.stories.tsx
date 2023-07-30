@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Rating } from '../components/rating.component'
+import { Rating } from '../components/Rating'
 
 const Ratings: Meta<typeof Rating> = {
   title: 'Components/Ratings',

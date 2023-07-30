@@ -19,7 +19,7 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 
-import { Drawer } from './Drawer.component'
+import { Drawer } from './Drawer'
 
 export interface NavbarProps {
   applicationName: string

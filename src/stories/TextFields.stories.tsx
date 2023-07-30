@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { StandardTextField } from '../components/textfield.component'
+import { StandardTextField } from '../components/Textfields'
 
 const TextFields: Meta<typeof StandardTextField> = {
   title: 'Components/TextFields',

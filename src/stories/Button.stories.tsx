@@ -7,7 +7,7 @@ import {
   Button,
   CancelButton,
   SubmitButton,
-} from '../components/button.component'
+} from '../components/Buttons'
 
 const Buttons: Meta<typeof Button> = {
   title: 'Components/Buttons',

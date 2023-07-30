@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 import { Grid } from '@mui/material'
 
-import { DialogBox } from '../components/dialogbox.component'
-import { HeaderWithAction } from '../components/HeaderWithAction.component'
-import { Rating } from '../components/rating.component'
-import { StandardTextField } from '../components/textfield.component'
+import { DialogBox } from '../components/DialogBoxes'
+import { HeaderWithAction } from '../components/HeaderWithAction'
+import { Rating } from '../components/Rating'
+import { StandardTextField } from '../components/Textfields'
 
 const Home = () => {
   const [newDialogOpen, setNewDialogOpen] = useState<boolean>(false)
