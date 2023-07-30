@@ -39,7 +39,7 @@ export const Navbar = ({ applicationName }: NavbarProps) => {
     <Box sx={{ flexGrow: 1 }}>
       <MuiAppBar
         enableColorOnDark
-        position="fixed"
+        position="static"
         sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
       >
         <Toolbar>

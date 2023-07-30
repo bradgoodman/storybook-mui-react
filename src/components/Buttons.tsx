@@ -29,7 +29,7 @@ export const BackButton = ({ onClick }: ButtonProps) => (
 )
 
 export const CancelButton = ({ onClick }: ButtonProps) => (
-  <MuiButton color="secondary" variant="contained" onClick={onClick}>
+  <MuiButton color="inherit" onClick={onClick}>
     Cancel
   </MuiButton>
 )
