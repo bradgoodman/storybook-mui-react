@@ -3,10 +3,10 @@ import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
 
 import {
-  Button,
-  SubmitButton,
   BackButton,
+  Button,
   CancelButton,
+  SubmitButton,
 } from '../components/button.component'
 
 const Buttons: Meta<typeof Button> = {

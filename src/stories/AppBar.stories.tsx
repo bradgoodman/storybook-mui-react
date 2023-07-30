@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { AppBar } from '../components/appbar.component'
+import { Navbar } from '../components/Navbar.component'
 
 export default {
-  title: 'Components/AppBar',
-  component: AppBar,
+  title: 'Components/Navbar',
+  component: Navbar,
   tags: ['autodocs'],
 }
 
 export const ApplicationBar = () => {
-  return <AppBar applicationName="Application Name" />
+  return <Navbar applicationName="Application Name" />
 }

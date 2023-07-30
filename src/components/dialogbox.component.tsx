@@ -2,11 +2,11 @@ import React from 'react'
 
 import CloseIcon from '@mui/icons-material/Close'
 import {
-  DialogProps as MuiDialogProps,
   Dialog as MuiDialogBox,
-  DialogTitle,
   DialogActions,
   DialogContent,
+  DialogProps as MuiDialogProps,
+  DialogTitle,
   IconButton,
 } from '@mui/material'
 

@@ -1,19 +1,14 @@
 import React from 'react'
 
-import { CssBaseline, ThemeProvider } from '@mui/material'
 import ReactDOM from 'react-dom/client'
 
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { themes } from './themes'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={themes.dark}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>
 )
 

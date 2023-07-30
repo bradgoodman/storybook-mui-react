@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Stack, Typography, Box } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress'
 
 import { Button } from './button.component'

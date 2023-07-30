@@ -11,9 +11,11 @@ const TextFields: Meta<typeof StandardTextField> = {
   argTypes: {
     label: {
       control: 'text',
+      description: 'Text Field Name',
     },
     fullWidth: {
       control: 'boolean',
+      description: 'Determines if Text Field should take up the full container',
     },
   },
 }

@@ -1,27 +1,33 @@
 import React, { useState } from 'react'
 
 import AccountCircle from '@mui/icons-material/AccountCircle'
+import Logout from '@mui/icons-material/Logout'
 import MenuIcon from '@mui/icons-material/Menu'
+import Settings from '@mui/icons-material/Settings'
 import {
   AppBar as MuiAppBar,
   Box,
   IconButton,
+  ListItemAvatar,
   Toolbar,
   Tooltip,
   Typography,
 } from '@mui/material'
+import Avatar from '@mui/material/Avatar'
+import Divider from '@mui/material/Divider'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
 
 import { Drawer } from './Drawer.component'
-import { AccountMenu } from './Menu.component'
 
-export interface AppBarProps {
+export interface NavbarProps {
   applicationName: string
 }
 
-export const AppBar = ({ applicationName }: AppBarProps) => {
+export const Navbar = ({ applicationName }: NavbarProps) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-  const open = Boolean(anchorEl)
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
   }
@@ -57,17 +63,38 @@ export const AppBar = ({ applicationName }: AppBarProps) => {
               <AccountCircle />
             </IconButton>
           </Tooltip>
+          <Menu
+            keepMounted
+            anchorEl={anchorEl}
+            id="account-menu"
+            open={!!anchorEl}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}>
+              <ListItemAvatar>
+                <Avatar />
+              </ListItemAvatar>
+              Profile
+            </MenuItem>
+            <Divider />
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon>
+                <Settings fontSize="small" />
+              </ListItemIcon>
+              Settings
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon>
+                <Logout fontSize="small" />
+              </ListItemIcon>
+              Logout
+            </MenuItem>
+          </Menu>
         </Toolbar>
       </MuiAppBar>
       {drawerOpen && <Drawer open={drawerOpen} />}
-      <AccountMenu
-        anchorEl={anchorEl}
-        handleClick={handleClick}
-        handleClose={handleClose}
-        open={open}
-      />
     </Box>
   )
 }
 
-AppBar.defaultProps = {}
+Navbar.defaultProps = {}
