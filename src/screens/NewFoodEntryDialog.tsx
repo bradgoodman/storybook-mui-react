@@ -19,7 +19,7 @@ const NewFoodEntryDialog: FC<INewFoodEntryDialog> = (props) => {
   const [restaurantName, setRestaurantName] = useState<string>('')
   const [foodName, setFoodName] = useState<string>('')
   const [foodRating, setFoodRating] = useState<number | null>(3)
-  const [foodCategory, setFoodCategory] = useState('')
+  const [foodCategory, setFoodCategory] = useState<string | null>('')
 
   const foodCategories = [
     'Chinese',

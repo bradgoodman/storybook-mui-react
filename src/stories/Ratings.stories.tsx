@@ -7,6 +7,7 @@ import { Rating } from '../components/Rating'
 const Ratings: Meta<typeof Rating> = {
   title: 'Components/Ratings',
   component: Rating,
+  tags: ['autodocs'],
   argTypes: {
     label: {
       control: 'text',

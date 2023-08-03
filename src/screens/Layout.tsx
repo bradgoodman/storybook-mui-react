@@ -15,7 +15,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <>
       <SnackBarProvider>
         <Navbar applicationName="Food Journal" />
-        <Box sx={{ width: '100vw', height: '95vh', padding: 1 }}>
+        <Box sx={{ width: '100vw', height: '90vh', padding: 1 }}>
           {children}
         </Box>
         <Footer />

@@ -17,7 +17,14 @@ export const HeaderWithAction = ({
   onClick,
 }: HeaderWithActionProps) => {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginTop: 0.5,
+        marginBottom: 1,
+      }}
+    >
       <Stack direction="row" spacing={1}>
         <Typography variant="h4">{text}</Typography>
         {loading && <CircularProgress />}
