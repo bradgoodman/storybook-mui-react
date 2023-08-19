@@ -88,7 +88,9 @@ export const Navbar = ({ applicationName }: NavbarProps) => {
           </Menu>
         </Toolbar>
       </MuiAppBar>
-      {drawerOpen && <Drawer open={drawerOpen} />}
+      {drawerOpen && (
+        <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+      )}
     </Box>
   )
 }

@@ -41,6 +41,10 @@ const Home = () => {
                   ),
                 },
               },
+              {
+                label: 'Notes',
+                name: 'notes',
+              },
             ]}
             data={[
               {
@@ -49,6 +53,7 @@ const Home = () => {
                 rating: 5,
                 cuisine: 'Italian',
                 date: new Date().toLocaleDateString(),
+                notes: 'Sweet sauce. Huge portion with homemade noodles.',
               },
               {
                 name: 'Bangkok Noodle',
@@ -56,6 +61,8 @@ const Home = () => {
                 rating: 5,
                 cuisine: 'Thai',
                 date: new Date().toLocaleDateString(),
+                notes:
+                  'Can get very spicy. Crunchy vegetables with yellow curry rice noodles.',
               },
               {
                 name: 'BBQ Chicken Fried Rice',
@@ -63,6 +70,7 @@ const Home = () => {
                 rating: 5,
                 cuisine: 'Thai',
                 date: new Date().toLocaleDateString(),
+                notes: 'Lots of chicken in dish',
               },
               {
                 name: 'Blue crab Dip',
@@ -70,6 +78,7 @@ const Home = () => {
                 rating: 5,
                 cuisine: 'America',
                 date: new Date().toLocaleDateString(),
+                notes: 'Comes with small breads for dipping',
               },
               {
                 name: 'Pad Thai',
@@ -77,6 +86,7 @@ const Home = () => {
                 rating: 4,
                 cuisine: 'Thai',
                 date: new Date().toLocaleDateString(),
+                notes: 'More sweet than other Thai Restaurants',
               },
               {
                 name: 'Double Cheese Burger',
@@ -84,6 +94,7 @@ const Home = () => {
                 rating: 3,
                 cuisine: 'America',
                 date: new Date().toLocaleDateString(),
+                notes: 'Nothing special',
               },
               {
                 name: 'Fiama Fafalda',
@@ -91,6 +102,7 @@ const Home = () => {
                 rating: 3,
                 cuisine: 'Italian',
                 date: '8/1/2023',
+                notes: 'Very spicy red sauce.',
               },
             ]}
             options={{

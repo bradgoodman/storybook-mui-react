@@ -3,20 +3,21 @@ import React from 'react'
 import HomeIcon from '@mui/icons-material/Home'
 import {
   Box,
+  Drawer as MuiDrawer,
   List,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Drawer as MuiDrawer,
   Toolbar,
 } from '@mui/material'
 
 export interface DrawerProps {
+  onClose: (value: boolean) => void
   open: boolean
 }
 
-export const Drawer = ({ open }: DrawerProps) => {
+export const Drawer = ({ open, onClose }: DrawerProps) => {
   const drawerWidth = 240
 
   const drawerItems: { icon: React.JSX.Element; path: string; text: string }[] =
@@ -36,7 +37,7 @@ export const Drawer = ({ open }: DrawerProps) => {
         flexShrink: 0,
         [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
       }}
-      variant="permanent"
+      onClose={onClose}
     >
       <Toolbar />
       <Box sx={{ overflow: 'auto' }}>

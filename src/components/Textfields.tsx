@@ -4,7 +4,7 @@ import { Autocomplete, TextField, TextFieldProps } from '@mui/material'
 
 type StandardTextFieldBaseProps = Pick<
   TextFieldProps,
-  'label' | 'value' | 'id' | 'fullWidth'
+  'label' | 'value' | 'id' | 'fullWidth' | 'multiline' | 'placeholder' | 'rows'
 >
 
 export interface StandardTextFieldProps extends StandardTextFieldBaseProps {
@@ -24,6 +24,7 @@ export const StandardTextField = ({
       id={id}
       label={label}
       value={value}
+      variant="outlined"
       onChange={(event) => onChange(event.target.value)}
     />
   )
@@ -47,7 +48,9 @@ export const AutocompleteTextField: FC<IAutocompleteTextField> = (props) => {
       filterSelectedOptions
       id={props.id}
       options={props.options}
-      renderInput={(params) => <TextField {...params} label={props.label} />}
+      renderInput={(params) => (
+        <TextField {...params} label={props.label} variant="outlined" />
+      )}
       value={props.value}
       onChange={(event, newValue: string | null) => {
         props.onChange(newValue)
